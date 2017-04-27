@@ -6,7 +6,7 @@ function checkMeetings() {
     var newNotifications = [];
     var notificationsToWarn = [];
 
-    $(".o365cs-notifications-notificationPopup .o365cs-notifications-reminders-listPanel").each(function(index, elem) {
+    $(".o365cs-notifications-notificationPopup .o365cs-notifications-reminders-listPanel .o365cs-notifications-reminders-flexpaneitem").each(function(index, elem) {
         newNotifications.push({
             type: "calendar",
             title: $(elem).find(".o365cs-notifications-reminders-title").text(),

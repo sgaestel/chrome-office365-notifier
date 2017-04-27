@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Chrome office365 Notifier",
     "description": "This extension allows having chrome native notifications for meeting reminders and incoming emails",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "background": {
         "scripts": [
             "js/background.js"
@@ -16,17 +16,15 @@
         "*://outlook.office.com/*",
         "*://outlook.office365.com/*"
     ],
-    "content_scripts": [
-        {
-            "matches": [
-                "*://outlook.office.com/*",
-                "*://outlook.office365.com/*"
-            ],
-            "js": [
-                "js/jquery-3.2.1.min.js",
-                "js/lodash.core.min.js",
-                "js/contentScript.js"
-            ]
-        }
-    ]
+    "content_scripts": [{
+        "matches": [
+            "*://outlook.office.com/*",
+            "*://outlook.office365.com/*"
+        ],
+        "js": [
+            "js/jquery-3.2.1.min.js",
+            "js/lodash.core.min.js",
+            "js/contentScript.js"
+        ]
+    }]
 }
